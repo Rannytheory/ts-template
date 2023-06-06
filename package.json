@@ -1,0 +1,26 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "Template for typescript projects",
+  "main": "dist/index.js",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.1.4"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "compile": "npx tsc && npx tsc-alias",
+    "dev": "npm run compile && DEBUG=* npm run start",
+    "test": "npx ts-node __tests__/"
+  },
+  "author": "Gim949",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/debug": "^4.1.8",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.2.5",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.6",
+    "typescript": "^5.1.3"
+  }
+}
