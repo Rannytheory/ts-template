@@ -11,7 +11,8 @@
     "start": "node ./dist/index.js",
     "compile": "npx tsc && npx tsc-alias",
     "dev": "npm run compile && DEBUG=* npm run start",
-    "test": "npx ts-node __tests__/"
+    "test": "npx ts-node __tests__/",
+    "cleanup": "rm -rf ./dist"
   },
   "author": "Gim949",
   "license": "ISC",
