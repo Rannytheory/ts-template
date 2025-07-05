@@ -1,7 +1,7 @@
 import { test } from "node:test"
 import * as assert from "node:assert";
-import logger from "@me/logger";
-import { add } from "@me/index";
+import logger from "../logger";
+import { add } from "../index";
 
 test("should pass", () => {
     logger.info;
