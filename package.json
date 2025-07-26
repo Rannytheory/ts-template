@@ -1,7 +1,6 @@
 {
   "name": "ts-template",
-  "version": "1.0.0",
-  "description": "Template for typescript projects",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "dependencies": {
     "debug": "^4.4.1",
@@ -15,8 +14,6 @@
     "test": "npm run build && node --test",
     "cleanup": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo"
   },
-  "author": "Gim949",
-  "license": "ISC",
   "devDependencies": {
     "@types/debug": "^4.1.12",
     "@types/dotenv": "^8.2.3",
