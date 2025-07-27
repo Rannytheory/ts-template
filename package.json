@@ -1,23 +1,19 @@
 {
   "name": "ts-template",
   "version": "0.0.0",
-  "main": "dist/index.js",
   "dependencies": {
-    "debug": "^4.4.1",
     "dotenv": "^16.6.1"
   },
   "scripts": {
-    "start": "DEBUG=app:* node ./dist/index.js",
-    "build": "npx tsc",
-    "build:prod": "npx tsc && rm -rf ./dist/__tests__",
-    "dev": "npm run build && DEBUG=* node ./dist/index.js",
-    "test": "npm run build && node --test",
-    "cleanup": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo"
+    "start": "DEBUG=* pnpm --filter app run start",
+    "build": "pnpm -r build",
+    "dev": "pnpm run build && DEBUG=* pnpm --filter app run start",
+    "test": "pnpm run build && pnpm -r test",
+    "cleanup": "pnpm -r cleanup"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.12",
-    "@types/dotenv": "^8.2.3",
     "@types/node": "^20.19.4",
     "typescript": "^5.8.3"
-  }
+  },
+  "packageManager": "pnpm@10.13.1"
 }

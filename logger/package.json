@@ -1,0 +1,14 @@
+{
+    "name": "@repo/logger",
+    "private": true,
+    "main": "lib/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "npx tsc",
+        "test": "node --test",
+        "cleanup": "rm -rf ./lib"
+    },
+    "dependencies": {
+        "chalk": "^5.4.1"
+    }
+}
